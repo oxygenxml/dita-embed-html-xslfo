@@ -4,9 +4,11 @@ The plugin works with both DITA OT 1.8 and 2.x.
 Example:
 
 The DITA structure:
+
     ....
     <foreign outputclass="html-embed"><![CDATA[<div><b>bold</b><i>italic</i></div>]]></foreign>
     ....
+    
 is converted in the HTML output to:
 
       ...........
