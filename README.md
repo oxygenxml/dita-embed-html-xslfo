@@ -1,16 +1,20 @@
 Plugin which allows embedding well-formed HTML content in a DITA topic inside a special <foreign outputclass="html-embed"> element.
 The plugin works with both DITA OT 1.8 and 2.x.
 
-Example:
+Example of embedding a YouTube video:
 
 The DITA structure:
 
     ....
-    <foreign outputclass="html-embed"><![CDATA[<div><b>bold</b><i>italic</i></div>]]></foreign>
+    <foreign outputclass="html-embed"><![CDATA[
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/qepRkQxhTXQ" frameborder="0" allowfullscreen="true">
+                </iframe>
+                ]]></foreign>
     ....
     
 is converted in the HTML output to:
 
       ...........
-      <div><b>bold</b><i>italic</i></div>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/qepRkQxhTXQ" frameborder="0" allowfullscreen="true">
+      </iframe>
       ............
