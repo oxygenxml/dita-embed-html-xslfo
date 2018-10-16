@@ -18,3 +18,9 @@ is converted in the HTML output to:
       <iframe width="420" height="315" src="https://www.youtube.com/embed/qepRkQxhTXQ" frameborder="0" allowfullscreen="true">
       </iframe>
       ............
+
+Copyright and License
+---------------------
+Copyright 2018 Syncro Soft SRL.
+
+This project is licensed under [Apache License 2.0](https://github.com/oxygenxml/dita-embed-html/blob/master/LICENSE)
