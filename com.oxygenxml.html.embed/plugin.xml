@@ -4,4 +4,5 @@
   <feature extension="package.support.email" value="support@oxygenxml.com"/>
   <feature extension="package.version" value="18.1"/>
   <feature extension="dita.xsl.xhtml" value="xhtmlEmbed.xsl" type="file"/>
+  <feature extension="dita.xsl.html5" value="xhtmlEmbed.xsl" type="file"/>
 </plugin>
