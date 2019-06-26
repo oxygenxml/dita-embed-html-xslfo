@@ -12,6 +12,8 @@ available in the base directory of this plugin.
     xmlns:saxon="http://saxon.sf.net/"
   >
   <xsl:template match="*[contains(@class, ' topic/foreign ')][@outputclass = 'html-embed']" priority="10">
-    <xsl:copy-of select="saxon:parse(concat('&lt;root>', text(), '&lt;/root>'))/*/node()"/>
+    <xsl:copy-of select="parse-xml(concat('&lt;root>', text(), '&lt;/root>'))/*/node()" use-when="not(function-available('saxon:parse'))"/>
+    <xsl:copy-of select="saxon:parse(concat('&lt;root>', text(), '&lt;/root>'))/*/node()" use-when="function-available('saxon:parse')"/>
   </xsl:template>
+
 </xsl:stylesheet>
