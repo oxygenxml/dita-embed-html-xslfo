@@ -1,5 +1,6 @@
 Plugin which allows embedding well-formed HTML content in a DITA topic inside a special <foreign outputclass="html-embed"> element.
-The plugin works with both DITA OT 1.8 and 2.x.
+The plugin can also embed well-formed XSL-FO content in a DITA topic inside a special <foreign outputclass="xslfo-embed"> element.
+The plugin works with both DITA OT 2.x and 3.x.
 
 Example of embedding a YouTube video:
 

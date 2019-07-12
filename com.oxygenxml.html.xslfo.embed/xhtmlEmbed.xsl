@@ -15,5 +15,4 @@ available in the base directory of this plugin.
     <xsl:copy-of select="parse-xml(concat('&lt;root>', text(), '&lt;/root>'))/*/node()" use-when="not(function-available('saxon:parse'))"/>
     <xsl:copy-of select="saxon:parse(concat('&lt;root>', text(), '&lt;/root>'))/*/node()" use-when="function-available('saxon:parse')"/>
   </xsl:template>
-
 </xsl:stylesheet>

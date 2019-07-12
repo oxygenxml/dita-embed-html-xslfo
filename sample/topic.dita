@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic">
+    <title>Topic</title>
+    <body>
+        <p>Some DITA content</p>
+        <!-- Embed HTML video -->
+        <foreign outputclass="html-embed"><![CDATA[
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/qepRkQxhTXQ" frameborder="0" allowfullscreen="true">
+            </iframe>
+            ]]></foreign>
+        <!-- Embed form in PDF using Antenna House -->
+        <foreign outputclass="xslfo-embed"><![CDATA[
+            <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" border="solid 1pt red" space-before="5mm"  xmlns:axf="http://www.antennahouse.com/names/XSL/Extensions">
+  <axf:form
+    external-destination="http://xwww.antenna.co.jp/form-test.cgi"
+    field-submit-method="post"
+    field-submit-coordinates="true">
+    <fo:block>ListBox 1:
+      <axf:form-field
+	  field-type="listbox"
+	  field-name="listbox1"
+	  field-top-index="1"
+	  field-multiple="false"
+          width="10em"
+	  height="25mm"
+	  background-color="#ff8"
+	  border="1pt silver inset"
+      >
+	<axf:form-field-option field-value="M">MasterCard</axf:form-field-option>
+	<axf:form-field-option field-value="V">Visa</axf:form-field-option>
+	<axf:form-field-option field-value="A">AMEX</axf:form-field-option>
+      </axf:form-field>
+    </fo:block>
+  </axf:form>
+</fo:block>
+            ]]></foreign>
+    </body>
+</topic>
